@@ -4,12 +4,20 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    background-color: rgb(202, 194, 194);
+}
+
+h1{
+    text-align: center;
 }
 
 .models-exercicio{
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
     width: 400px;
-    height: 500px;
-    background-color: rgb(172, 172, 172);
+    height: 800px;
+    background-color: rgb(34, 214, 184);
     margin-left: 20px;
     margin-bottom: 20px;
 }
@@ -19,4 +27,34 @@ body{
     margin-top: 10%;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.models-title{
+    text-align: center;
+}
+
+video{
+    width: 300px;
+    margin-left: 50px;
+    border: 2px solid black;
+    border-radius:10px ;
+}
+
+.models-desc{
+    font-size: 17px;
+}
+
+.models-btn{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    width: 200px;
+    height: 30px;
+}
+
+button{
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(19, 105, 204);
 }
