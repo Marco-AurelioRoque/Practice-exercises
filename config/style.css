@@ -3,22 +3,20 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
-header{
-    position: absolute;
-    top: 0;
+.models-exercicio{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(172, 172, 172);
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
-nav{
-    background-color: blue;
-    list-style: none;
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    padding: 10px;
-}
-
-nav ul li {
-    display: inline;
+.exercicios{
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
