@@ -11,6 +11,93 @@ h1{
     text-align: center;
 }
 
+#paragraph-info{
+    max-width: 50%;
+    text-align: center;
+    left: 25%;
+    position: absolute;
+}
+
+aside{
+    height: 100vh;
+    width: 250px;
+    border: 2px solid black;
+    display: none;
+    position: fixed;
+    background-color: rgb(148, 54, 235);
+    animation: animationMenu;
+    animation-duration: 1000ms;
+}
+
+@keyframes animationMenu{
+    0%{
+        width: 0px;
+    }
+
+    100%{
+        width: 250px;
+    }
+}
+
+
+
+#fechaMenu{
+    margin-top: 300px;
+    margin-right: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    animation-duration: 2000ms;
+    animation-name: animationBtn;
+}
+
+@keyframes animationBtn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.menu-wrapper{
+    position: fixed;
+    top: 0;
+}
+
+#menuOpenner{
+    position: absolute;
+    top: 0;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 24px;
+    margin-bottom: 70px;
+    animation-duration: 2000ms;
+    animation-name: animationText;
+}
+
+@keyframes animationText{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a:hover{
+    color: white;
+}
+
 .models-exercicio{
     padding: 5px;
     border-radius: 10px;
