@@ -131,7 +131,7 @@ p{
     video{
         width: 300px;
         margin-right: auto;
-        margin-left: 95px;
+        margin-left: 30px;
         margin-top: 15%;
     }
 
@@ -156,7 +156,7 @@ p{
 
     aside{
         top: 8%;
-        left: 25%;
+        left: 17%;
         position: absolute;
         animation-name: animationAside;
         animation-duration: 1500ms;
