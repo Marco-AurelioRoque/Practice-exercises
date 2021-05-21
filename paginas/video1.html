@@ -9,10 +9,13 @@
 </head>
 <body>
     
-    <button class="musicasExercicio" onclick="openMusic()">Musicas</button>
+    <div class="musica-wrapper">
+        <button class="musicasExercicio" onclick="openMusic()">Musicas</button>
+    </div>
 
     <aside>
         <nav>
+            <img src="https://th.bing.com/th/id/R516780c997fcd3d644a7e229afb59f7d?rik=MLj6KnqW8%2bAPfg&pid=ImgRaw" alt="fechar Modal" width="30px" onclick="closeMusic()" id="fechaMusica">
             <ul>
                 <button onclick="addMusicHay()">Hayloft - Mother Mother</button>
                 <iframe id="hayloft" width="145" height="150" src="https://www.youtube.com/embed/8LvAiJYKoSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

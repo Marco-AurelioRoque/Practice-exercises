@@ -2,6 +2,10 @@ function openMusic() {
     document.querySelector("aside").style.display = "block"
 }
 
+function closeMusic() {
+    document.querySelector("aside").style.display = "none"
+}
+
 //Musicas
 
 function addMusicHay() {
