@@ -16,7 +16,7 @@ aside{
     width: 250px;
     border: 2px solid black;
     display: none;
-    position: fixed;
+    position: absolute;
     background-color: rgb(148, 54, 235);
     animation: animationMenu;
     animation-duration: 1000ms;
@@ -52,11 +52,6 @@ aside{
     100%{
         opacity: 1;
     }
-}
-
-.menu-wrapper{
-    position: fixed;
-    top: 0;
 }
 
 #menuOpenner{
@@ -143,5 +138,9 @@ button{
     #fechaMenu{
         margin-top: 350px;
     }
-}
 
+    .models-exercicio{
+        margin-right: 50px;
+    }
+
+}

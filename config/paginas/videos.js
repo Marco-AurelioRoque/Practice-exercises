@@ -6,6 +6,24 @@ function closeMusic() {
     document.querySelector("aside").style.display = "none"
 }
 
+var timeBar = document.querySelector(".barTime")
+var intervalo = 30000
+function start() {
+    timeBar.style.display = "block"
+    
+    setTimeout(() => {
+    var sound = new Audio('../musicas/timer.mp3')
+    sound.play() 
+    }, intervalo);
+}
+
+function reset() {
+    timeBar.style.display = "none"
+    
+    var sound = new Audio('../musicas/timer.mp3')
+    sound.pause() 
+}
+
 //Musicas
 var hayloft = document.querySelector("#hayloft")
 var wanna = document.querySelector("#wanna-be")

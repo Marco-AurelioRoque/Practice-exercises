@@ -39,7 +39,7 @@
                 <audio id="chandelier" src="../musicas/Sia  Chandelier Official Music Video.mp3" controls></audio>
 
                 <button onclick="gen()">Genius - LSD</button>
-                <audio id="genius" src="../musicas/LSD  Genius ft Sia Diplo Labrinth.mp3" controls></audio>
+                <audio id="genius" src="../musicas/LSD  Genius ft Sia Diplo Labrinth.mp3" controls ></audio>
             </ul>
         </nav>
     </aside>
@@ -50,6 +50,12 @@
     <h2>Como fazer</h2>
     <p>Em pé, com as pernas unidas e os braços estendidos ao lado do corpo, dê um salto para cima. Ao mesmo tempo, afaste os pés lateralmente e bata as mãos acima da cabeça. Volte para a posição inicial e depois agache, tocando as mãos no solo. Estenda as pernas e repita o exercício.</p>
 
+    <button class="startTime" onclick="start()">Começar timer</button>
+    <button class="resetTime" onclick="reset()">Resetar timer</button>
+
+    <div class="barTime"></div>
+
+    <audio src="../musicas/timer.mp3" class="soundTimer" style="display: block;" muted></audio>
     <script src="videos.js"></script>
 </body>
 </html>

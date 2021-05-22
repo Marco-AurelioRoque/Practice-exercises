@@ -3,6 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
     background-color: rgb(202, 194, 194);
 }
 
@@ -127,11 +128,78 @@ p{
     margin-right: auto;
 }
 
+.barTime{
+    background-color: rgb(184, 179, 179);
+    width: 100vw;
+    height: 10px;
+    padding: 10px;
+    animation-name: animationBarTime;
+    transform: translate(0px, 18px);
+    animation-duration: 35s;
+    display: none;
+}
+
+.soundTimer{
+    animation-name: animationSound;
+    animation-duration: 35s;
+}
+
+.startTime{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(12, 212, 12);
+    font-size: 20px;
+    position: absolute;
+    bottom: 110px;
+}
+
+.resetTime{
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    font-size: 20px;
+    position: absolute;
+    bottom: 50px;
+}
+@keyframes animationBarTime {
+    0%{
+        width: 0px;
+        background-color: rgb(4, 214, 4);
+    }
+
+    50%{
+        background-color: yellow;
+    }
+
+    100%{
+        width: 100vw;
+        background-color: rgb(233, 62, 10);
+    }
+}
+
+
 @media screen and (max-width:650px) {
+
+    .startTime{
+        width: 100px;
+        height: 50px;
+        transform: translate(130px, 180px);
+    }
+    
+    .resetTime{
+        width: 100px;
+        height: 50px;
+        transform: translate(280px, 120px);
+    }
+
+    .barTime{
+        transform: translate(0px, 80px);
+    }
+
     video{
         width: 300px;
         margin-right: auto;
-        margin-left: 30px;
+        margin-left: 20%;
         margin-top: 15%;
     }
 
@@ -146,6 +214,10 @@ p{
         left: 42%;
     }
 
+    audio{
+        margin-left: 10px;
+    }
+
     p, h2{
         margin-top: 50px;
     }
@@ -156,7 +228,7 @@ p{
 
     aside{
         top: 8%;
-        left: 17%;
+        left: 25%;
         position: absolute;
         animation-name: animationAside;
         animation-duration: 1500ms;
