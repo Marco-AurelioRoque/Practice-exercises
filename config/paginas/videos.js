@@ -15,6 +15,8 @@ function start() {
     var sound = new Audio('../musicas/timer.mp3')
     sound.play() 
     }, intervalo);
+
+    alert("Clicando em 'OK' você iniciará o cronometro e terá 30 segundos para fazer o exercicio, para resetar o cronometro basta clicar em 'RESETAR TIMER' ")
 }
 
 function reset() {
