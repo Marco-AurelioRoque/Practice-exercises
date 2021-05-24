@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-    background-color: rgb(202, 194, 194);
+    background-color: rgb(224, 219, 219);
 }
 
 h1{
@@ -57,6 +57,18 @@ aside{
 #menuOpenner{
     position: absolute;
     top: 0;
+    animation-name: animationOpennerMenu;
+    animation-duration: 1000ms;
+}
+
+@keyframes animationOpennerMenu {
+    0%{
+        transform: rotate(0deg);
+    }    
+
+    100%{
+        transform: rotate(-350deg);
+    }
 }
 
 nav ul li{
@@ -88,6 +100,7 @@ nav ul a:hover{
 
 .models-exercicio{
     padding: 5px;
+    box-shadow: 1px 1px 5px black;
     border-radius: 10px;
     border: 2px solid black;
     width: 400px;
@@ -97,7 +110,26 @@ nav ul a:hover{
     margin-bottom: 20px;
 }
 
+#closeMenuAside{
+    position: absolute;
+    top: 5px;
+    animation-name: animationCloseMenu;
+    animation-duration: 1000ms;
+    display: none;
+}
+
+@keyframes animationCloseMenu {
+    0%{
+        transform: rotate(0deg);
+    }    
+
+    100%{
+        transform: rotate(350deg);
+    }
+}
+
 .exercicios{
+    margin-right: 20px;
     display: flex;
     margin-top: 10%;
     justify-content: center;

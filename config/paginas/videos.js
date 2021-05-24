@@ -8,22 +8,16 @@ function closeMusic() {
 
 var timeBar = document.querySelector(".barTime")
 var intervalo = 30000
-function start() {
-    timeBar.style.display = "block"
-    
+function start() {    
     setTimeout(() => {
     var sound = new Audio('../musicas/timer.mp3')
     sound.play() 
     }, intervalo);
 
-    alert("Clicando em 'OK' você iniciará o cronometro e terá 30 segundos para fazer o exercicio, para resetar o cronometro basta clicar em 'RESETAR TIMER' ")
-}
-
-function reset() {
-    timeBar.style.display = "none"
-    
     var sound = new Audio('../musicas/timer.mp3')
-    sound.pause() 
+    sound.play() 
+
+    var alertaGo = document.querySelector(".starterGo").style.display = "block"
 }
 
 //Musicas
