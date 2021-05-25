@@ -18,11 +18,12 @@ aside{
     display: none;
     position: absolute;
     background-color: rgb(148, 54, 235);
-    animation: animationMenu;
+    animation: animationMenuOpen;
     animation-duration: 1000ms;
+    z-index: 99;
 }
 
-@keyframes animationMenu{
+@keyframes animationMenuOpen{
     0%{
         width: 0px;
     }
@@ -32,34 +33,13 @@ aside{
     }
 }
 
-
-
-#fechaMenu{
-    margin-top: 300px;
-    margin-right: 10px;
-    width: 150px;
-    height: 50px;
-    background-color: red;
-    animation-duration: 2000ms;
-    animation-name: animationBtn;
-}
-
-@keyframes animationBtn{
-    0%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
-}
-
 #menuOpenner{
     position: absolute;
     top: 0;
     animation-name: animationOpennerMenu;
     animation-duration: 1000ms;
 }
+
 
 @keyframes animationOpennerMenu {
     0%{
@@ -120,10 +100,12 @@ nav ul a:hover{
 
 @keyframes animationCloseMenu {
     0%{
+        opacity: 0;
         transform: rotate(0deg);
     }    
 
     100%{
+        opacity: 1;
         transform: rotate(350deg);
     }
 }
@@ -142,7 +124,7 @@ nav ul a:hover{
 
 video{
     width: 300px;
-    margin-left: 30px;
+    margin-left: 48px;
     border: 2px solid black;
     border-radius:10px;
 }
@@ -169,6 +151,10 @@ button{
 @media screen and(max-width:650px) {
     #fechaMenu{
         margin-top: 350px;
+    }
+    
+    video{
+        margin-left: 35px;
     }
 
 }
