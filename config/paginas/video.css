@@ -189,19 +189,20 @@ p{
 @media screen and (max-width:650px) {
 
     .starterGo{
-        left: 42%;
+        left: 35%;
     }
 
     .startTime{
         width: 100px;
         height: 50px;
-        transform: translate(-120px, 700px);
+        transform: translate(-100px, 700px);
+        margin-bottom: 10px;
     }
     
     video{
         width: 300px;
         margin-right: auto;
-        margin-left: 8%;
+        margin-left: 2.5%;
         margin-top: 15%;
     }
 
@@ -213,8 +214,8 @@ p{
 
     .musica-wrapper{
         position: absolute;
-        top: 2%;
-        left: 37%;
+        top: 1%;
+        left: 35%;
     }
 
     audio{
@@ -231,7 +232,7 @@ p{
 
     aside{
         top: 8%;
-        left: 15%;
+        left: 12%;
         position: absolute;
         animation-name: animationAside;
         animation-duration: 1500ms;

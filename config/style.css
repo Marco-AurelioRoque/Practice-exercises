@@ -142,9 +142,9 @@ nav ul a:hover{
 
 video{
     width: 300px;
-    margin-left: 50px;
+    margin-left: 30px;
     border: 2px solid black;
-    border-radius:10px ;
+    border-radius:10px;
 }
 
 .models-desc{
