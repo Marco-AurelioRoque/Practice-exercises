@@ -1,27 +1,4 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
-    background-color: rgb(202, 194, 194);
-}
 
-.musicasExercicio{
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 100px;
-    height: 50px;
-    background-color: rgb(0, 183, 255);
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.musicasExercicio:hover{
-    background-color: rgb(8, 163, 224);
-    color: white;
-}
 
 aside{
     height: 90vh;
@@ -46,24 +23,10 @@ aside{
     }
 }
 
-#fechaMusica{
-    animation-name: animationClose;
-    animation-duration: 2000ms;
-}
-
-@keyframes animationClose{
-    0%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
-}
-
 nav ul button{
     background-color: rgb(8, 226, 208);
-    height: 40px;
+    font-size: 14px;
+    height: 50px;
     width: 70%;
     animation-name: animationBtn;
     animation-duration: 2000ms;
@@ -114,143 +77,3 @@ audio{
     }
 }
 
-video{
-    width: 400px;
-    margin-left: 36%;
-    margin-top: 2%;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-h2{
-    text-align: center;
-}
-
-p{
-    max-width: 30%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.startTime{
-    width: 150px;
-    height: 50px;
-    background-color: rgb(12, 212, 12);
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-.startTime:active{
-    animation: animationBtnTimer;
-    animation-duration: 1000ms;
-}
-
-.starterGo{
-    position: absolute;
-    left: 47%;
-    top: 50%;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
-    color: blue;
-    display: none;
-    transform: scale(0.0);
-    text-shadow: 1px 1px 1px white;
-    animation-name: animationStarter;
-    animation-duration: 1300ms;
-}
-
-@keyframes animationStarter {
-
-    0%{
-        transform: scale(0.0);
-    }
-
-    20%{
-        transform: scale(6.0);
-    }
-
-    50%{
-        transform: scale(4.5);
-    }
-
-    100%{
-        transform: scale(6.0);
-    }
-
-}
-
-
-
-@media screen and (max-width:650px) {
-
-    .starterGo{
-        left: 35%;
-    }
-
-    .startTime{
-        width: 100px;
-        height: 50px;
-        transform: translate(-100px, 700px);
-        margin-bottom: 10px;
-    }
-    
-    video{
-        width: 300px;
-        margin-right: auto;
-        margin-left: 2.5%;
-        margin-top: 15%;
-    }
-
-    .musicasExercicio{
-        width: 80px;
-        height: 30px;  
-        font-size: 16px;    
-    }
-
-    .musica-wrapper{
-        position: absolute;
-        top: 1%;
-        left: 35%;
-    }
-
-    audio{
-        margin-left: 10px;
-    }
-
-    p, h2{
-        margin-top: 50px;
-    }
-
-    p{
-        max-width: 70%;
-    }
-
-    aside{
-        top: 8%;
-        left: 12%;
-        position: absolute;
-        animation-name: animationAside;
-        animation-duration: 1500ms;
-        z-index: 99;
-    }
-
-    @keyframes animationAside {
-        0%{
-            height: 0px;
-        }
-
-        100%{
-            height: 90vh;
-        }
-    }
-
-    nav ul button{
-        margin-left: 13px;
-    }
-   
-}
