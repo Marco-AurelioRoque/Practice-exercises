@@ -12,3 +12,11 @@ function menuToggle() {
     document.querySelector("#menuOpenner").style.display = "none"
     asideMenu.style.display = "block"
 }
+
+function loadPopups() {
+    document.querySelector(".popups-wrapper").style.display = "block"
+}
+
+function btnContinue() {
+    document.querySelector(".popups-wrapper").style.display = "none"
+}
