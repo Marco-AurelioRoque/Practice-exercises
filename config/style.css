@@ -20,6 +20,7 @@ body{
     display: none;
     animation-name: animationPopups;
     animation-duration: 1000ms;
+    z-index: 99;
 }
 
 @keyframes animationPopups {
@@ -298,13 +299,17 @@ button{
     background-color: rgb(19, 105, 204);
 }
 
-@media screen and(max-width:667px) {
+@media all and(max-width:500px) {
     #fechaMenu{
         margin-top: 350px;
     }
     
     video{
-        margin-left: 35px;
+        margin-left: 1px;
+    }
+
+    .sidebar{
+        display: none;
     }
 
 }
