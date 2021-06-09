@@ -27,38 +27,53 @@
     <!--Aside-->
     <input type="checkbox" id="check">
     <label for="check">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2000px-Hamburger_icon.svg.png" alt="Menu" width="50px" id="btn" onclick="menuToggle()">
+        <img src="https://i.pinimg.com/originals/a8/5f/a4/a85fa41c21eb479722002d6e4ed3dd44.png" alt="Menu" width="50px" id="btn" onclick="menuToggle()">
 
-        <img src="https://vignette.wikia.nocookie.net/rocketleague/images/f/f2/Xbox_X_button.png/revision/latest?cb=20171128173147" alt="" id="cancel" onclick="closeMenu()" width="50px">
+        <img src="https://th.bing.com/th/id/R89c5135551b4aa62544ed20ecff29483?rik=cwsiKmIAWIXUGw&pid=ImgRaw" alt="" id="cancel" onclick="closeMenu()" width="150px">
     </label>
     <nav class="sidebar">
+      <button class="songs-btn" onclick="musicasAside()">Musicas</button>
+      <button class="exercises" onclick="exerciciosAside()">Exercicios</button>
 
-        <div style="color: white; font-size: 27px; text-align: center; margin-top: 10px; margin-bottom: 70px;">Musicas</div>
+      <!--Musicas-->
+      <ul class="listSongs">
+          <button onclick="addMusicHay()">Hayloft - Mother Mother</button>
+          <audio id="hayloft" src="../config/musicas/Mother Mother  Hay Loft.mp3" controls></audio>
 
-      <button onclick="addMusicHay()">Hayloft - Mother Mother</button>
-      <audio id="hayloft" src="../config/musicas/Mother Mother  Hay Loft.mp3" controls></audio>
+          <button onclick="addMusicWanna()">I wanna be yours - Arctic Monkeys</button>
+          <audio id="wanna-be" src="../config/musicas/I Wanna Be Yours.mp3" controls></audio>
 
-      <button onclick="addMusicWanna()">I wanna be yours - Arctic Monkeys</button>
-      <audio id="wanna-be" src="../config/musicas/I Wanna Be Yours.mp3" controls></audio>
+          <button onclick="addMusicLev()">Levitating - Dua Lipa</button>
+          <audio id="levitating" src="../config/musicas/Dua Lipa DaBaby  Levitating Lyrics  you want me i want you baby.mp3" controls></audio>
 
-      <button onclick="addMusicLev()">Levitating - Dua Lipa</button>
-      <audio id="levitating" src="../config/musicas/Dua Lipa DaBaby  Levitating Lyrics  you want me i want you baby.mp3" controls></audio>
+          <button onclick="infi()">Infinity - Jaymes Young</button>
+          <audio id="infinit" src="../config/musicas/Jaymes Young  Infinity Official Audio.mp3" controls></audio>
 
-      <button onclick="infi()">Infinity - Jaymes Young</button>
-      <audio id="infinit" src="../config/musicas/Jaymes Young  Infinity Official Audio.mp3" controls></audio>
+          <button onclick="addMusicAlive()">Alive - Alok</button>
+          <audio id="aliv" src="../config/musicas/Alok  Alive It Feels Like Official Visualizer.mp3" controls></audio>
 
+          <button onclick="rememberCen()">Remember for centuries</button>
+          <audio id="rfc" src="../config/musicas/AVENGERS  Remember for Centuries.mp3" controls></audio>
 
-      <button onclick="addMusicAlive()">Alive - Alok</button>
-      <audio id="aliv" src="../config/musicas/Alok  Alive It Feels Like Official Visualizer.mp3" controls></audio>
+          <button onclick="chand()">Chandelier - Sia</button>
+          <audio id="chandelier" src="../config/musicas/Sia  Chandelier Official Music Video.mp3" controls></audio>
 
-      <button onclick="rememberCen()">Remember for centuries</button>
-      <audio id="rfc" src="../config/musicas/AVENGERS  Remember for Centuries.mp3" controls></audio>
+          <button onclick="gen()">Genius - LSD</button>
+          <audio id="genius" src="../config/musicas/LSD  Genius ft Sia Diplo Labrinth.mp3" controls ></audio>
+      </ul>
 
-      <button onclick="chand()">Chandelier - Sia</button>
-      <audio id="chandelier" src="../config/musicas/Sia  Chandelier Official Music Video.mp3" controls></audio>
-
-      <button onclick="gen()">Genius - LSD</button>
-      <audio id="genius" src="../config/musicas/LSD  Genius ft Sia Diplo Labrinth.mp3" controls ></audio>
+      <ul class="listExercises">
+          <h3> 
+             Começando
+          </h3> 
+            <button class="exerciciosBtn">Alongamentos</button>
+          <hr>
+          <h3>
+              Finalizando
+          </h3>  
+            <button class="exerciciosBtn">Aeróbicos</button>
+            <button class="exerciciosBtn">Anaeróbicos</button>
+      </ul>
     </nav>
 
 

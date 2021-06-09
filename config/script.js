@@ -1,4 +1,8 @@
 var asideMenu = document.querySelector("aside")
+var exercisesBtn = document.querySelector(".exercises")
+var songsBtn = document.querySelector(".songs")
+var songsPlay = document.querySelector(".listSongs")
+var exercisesPlay = document.querySelector(".listExercises")
 
 
 function closeMenu(){
@@ -19,4 +23,14 @@ function loadPopups() {
 
 function btnContinue() {
     document.querySelector(".popups-wrapper").style.display = "none"
+}
+
+function musicasAside(){
+    songsPlay.style.display = "block"
+    exercisesPlay.style.display = "none"
+}
+
+function exerciciosAside() {
+    songsPlay.style.display = "none"
+    exercisesPlay.style.display = "block"
 }
