@@ -105,7 +105,8 @@ button{
     }
 
     .popups-wrapper{
-        left: 10%;
+        left: 5.8%;
+        width: 400px;
     }
 
     h1{
@@ -116,12 +117,12 @@ button{
 
 .sidebar{
     border: 1px solid black;
-    position: absolute;
+    position: fixed;
     width: 240px;
     top: 0px;
     left: -240px;
     height: 100%;
-    background: #ac19a4;
+    background: #d6abab;
     transition: all .5s ease;
     z-index: 99;
   }
@@ -140,33 +141,19 @@ button{
     width: 100%;
     color: white;
     line-height: 65px;
+    text-decoration: none;
     padding-left: 30px;
     box-sizing: border-box;
-    border-bottom: 1px solid black;
-    border-top: 1px solid rgba(255,255,255,.1);
-    border-left: 5px solid transparent;
     font-family: 'Open Sans', sans-serif;
     transition: all .5s ease;
   }
   
   /*Outros (Aside)*/
-  a.active,a:hover{
-    border-left: 5px solid #b93632;
-    color: #b93632;
-  }
-  .sidebar a i{
-    font-size: 23px;
-    margin-right: 16px;
-  }
-  .sidebar a span{
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
   #check{
     display: none;
   }
   label #btn,label #cancel{
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     color: white;
     border-radius: 5px;
@@ -181,6 +168,7 @@ button{
     text-align: center;
     line-height: 45px;
     transition: all .5s ease;
+    z-index: 99;
   }
   label #cancel{
     opacity: 0;
@@ -216,6 +204,11 @@ button{
       margin-top: 10px;
       background-color: blueviolet;
       color: white;
+      cursor: pointer;
+  }
+
+  .songs-btn:hover{
+      background-color: rgb(127, 37, 211);
   }
   
   /*Exercises*/
@@ -230,13 +223,16 @@ button{
   }
   
   hr{
-      margin-right: 35px;
-      height: 2px;
       background-color: white;
+      height: 2px;
+  }
+
+  #hrExercises{
+      margin-right: 35px;
   }
   
   .exerciciosBtn{
-      margin-right: 48px;
+      margin-right: 50%;
   }
   
   .exercises{
@@ -246,6 +242,11 @@ button{
       width: 150px;
       height: 45px;
       color: white;
+      cursor: pointer;
+  }
+
+  .exercises:hover{
+      background-color: rgb(127, 37, 211);
   }
 
 }

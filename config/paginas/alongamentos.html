@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aerobicos.css">
+    <link rel="stylesheet" href="video.css">
+    <title>Alongamentos</title>
+</head>
+<body>
+
+    <h1>Exercicios Aeróbicos</h1>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+        <img src="https://i.pinimg.com/originals/a8/5f/a4/a85fa41c21eb479722002d6e4ed3dd44.png" alt="Menu" width="50px" id="btn" onclick="menuToggle()">
+
+        <img src="https://th.bing.com/th/id/R89c5135551b4aa62544ed20ecff29483?rik=cwsiKmIAWIXUGw&pid=ImgRaw" alt="" id="cancel" onclick="closeMenu()" width="150px">
+    </label>
+    <nav class="sidebar">
+        <button class="songs-btn" onclick="musicasAside()">Musicas</button>
+        <button class="exercises" onclick="exerciciosAside()">Exercicios</button>
+  
+        <!--Musicas MOBILE-->
+        <ul class="listSongs">
+            <button onclick="addMusicHay()">Hayloft - Mother Mother</button>
+            <audio id="hayloft" src="../musicas/Mother Mother  Hay Loft.mp3" controls></audio>
+  
+            <button onclick="addMusicWanna()">I wanna be yours - Arctic Monkeys</button>
+            <audio id="wanna-be" src="../musicas/I Wanna Be Yours.mp3" controls></audio>
+  
+            <button onclick="addMusicLev()">Levitating - Dua Lipa</button>
+            <audio id="levitating" src="../musicas/Dua Lipa DaBaby  Levitating Lyrics  you want me i want you baby.mp3" controls></audio>
+  
+            <button onclick="infi()">Infinity - Jaymes Young</button>
+            <audio id="infinit" src="../musicas/Jaymes Young  Infinity Official Audio.mp3" controls></audio>
+  
+            <button onclick="addMusicAlive()">Alive - Alok</button>
+            <audio id="aliv" src="../musicas/Alok  Alive It Feels Like Official Visualizer.mp3" controls></audio>
+  
+            <button onclick="rememberCen()">Remember for centuries</button>
+            <audio id="rfc" src="../musicas/AVENGERS  Remember for Centuries.mp3" controls></audio>
+  
+            <button onclick="chand()">Chandelier - Sia</button>
+            <audio id="chandelier" src="../musicas/Sia  Chandelier Official Music Video.mp3" controls></audio>
+  
+            <button onclick="gen()">Genius - LSD</button>
+            <audio id="genius" src="../musicas/LSD  Genius ft Sia Diplo Labrinth.mp3" controls ></audio>
+        </ul>
+        <!--Exercicios MOBILE-->
+        <ul class="listExercises">
+            <h3> 
+               Começando
+            </h3> 
+              <a href="paginas/alongamento.html"><button class="exerciciosBtn">Alongamentos</button></a>
+            <hr id="hrExerci">
+            <h3>
+                Finalizando
+            </h3>  
+              <a href="paginas/aerobicos.html"><button class="exerciciosBtn">Aeróbicos</button></a>
+              <a href="paginas/anaerobicos.html"><button class="exerciciosBtn">Anaeróbicos</button></a>
+        </ul>
+      </nav>
+
+<section class="exercicios">
+    
+        <div class="models-exercicio">
+            <div class="models-title">
+                <h2 class="title">Alongamento em pé para panturrilha</h2>
+            </div>
+            <iframe width="400" height="340" src="https://www.youtube.com/embed/SdLcIFggpqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <hr>
+            <div class="models-desc">
+                <h2>Como fazer</h2>
+                Com as pernas afastadas, sendo uma mais na frente e a outra mais atrás, deve-se apoiar a ponta do pé frontal na parede, mantendo o calcanhar no chão.
+
+                depois, inclinar o corpo em direção a parede, apoiando as duas mãos nela, mantendo os joelhos esticados e mantendo o outro pé apoiado no solo sem elevar o calcanhar. Segurar nessa posição durante um tempo estipulado inicialmente, podendo variar de pessoa para pessoa.
+            </div>
+            <hr>
+            <button>Fazer exercicio</button></a>
+        </div>
+</section>
+
+
+<script src="../script.js"></script>
+<script src="../paginas/videos.js"></script>
+</body>
+</html>
