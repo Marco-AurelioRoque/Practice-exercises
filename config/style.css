@@ -52,167 +52,29 @@ h1{
     font-size: 40px;
 }
 
-/*Sidebar*/
 
-.sidebar{
-  border: 1px solid black;
-  position: absolute;
-  width: 240px;
-  top: 0px;
-  left: -240px;
-  height: 100%;
-  background: #ac19a4;
-  transition: all .5s ease;
-  z-index: 99;
-}
-.sidebar header{
-  font-size: 28px;
-  color: white;
-  line-height: 70px;
-  text-align: center;
-  background: #1b1b1b;
-  user-select: none;
-  font-family: 'Montserrat', sans-serif;
-}
-.sidebar a{
-  display: block;
-  height: 65px;
-  width: 100%;
-  color: white;
-  line-height: 65px;
-  padding-left: 30px;
-  box-sizing: border-box;
-  border-bottom: 1px solid black;
-  border-top: 1px solid rgba(255,255,255,.1);
-  border-left: 5px solid transparent;
-  font-family: 'Open Sans', sans-serif;
-  transition: all .5s ease;
-}
-
-/*Outros (Aside)*/
-a.active,a:hover{
-  border-left: 5px solid #b93632;
-  color: #b93632;
-}
-.sidebar a i{
-  font-size: 23px;
-  margin-right: 16px;
-}
-.sidebar a span{
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-#check{
-  display: none;
-}
-label #btn,label #cancel{
-  position: absolute;
-  cursor: pointer;
-  color: white;
-  border-radius: 5px;
-  top: 0px;
-  margin: 15px 30px;
-  font-size: 29px;
-  height: 45px;
-  width: 45px;
-  text-align: center;
-  line-height: 45px;
-  transition: all .5s ease;
-}
-label #cancel{
-  opacity: 0;
-  visibility: hidden;
-}
-#check:checked ~ .sidebar{
-  left: 0;
-}
-#check:checked ~ label #btn{
-  margin-left: 245px;
-  opacity: 0;
-  visibility: hidden;
-}
-#check:checked ~ label #cancel{
-  margin-left: 245px;
-  opacity: 1;
-  visibility: visible;
-}
-
-/*Songs*/
-.listSongs{
-    display: none;
-    right: 17px;
-    width: 200px;
-    height: 20px;
-    position: absolute;
-}
-
-.songs-btn{
-    width: 150px;
-    height: 45px;
-    margin-left: 48px;
-    margin-top: 10px;
-    background-color: blueviolet;
-    color: white;
-}
-
-/*Exercises*/
-.listExercises{
-    display: none;
-}
-
-h3{
-    text-align: center;
-    margin-right: 30px;
-}
-
-hr{
-    margin-right: 35px;
-}
-
-.exerciciosBtn{
-    margin-right: 48px;
-}
-
-.exercises{
-    margin-top: 10px;
-    margin-left: 48px;
-    background-color: blueviolet;
-    width: 150px;
-    height: 45px;
-    color: white;
-}
 
 /*Modelos exercicios*/
 .models-exercicio{
-    padding: 5px;
+    padding: 15px;
     box-shadow: 1px 1px 5px black;
     border-radius: 10px;
     border: 2px solid black;
     width: 400px;
     height: 800px;
     background-color: rgb(34, 214, 184);
-    margin-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 20px;
 }
 
+video{
+    border-radius: 10px;
+}
 
 .exercicios{
-    margin-right: 20px;
     display: flex;
-    margin-top: 10%;
-    justify-content: center;
     flex-wrap: wrap;
-}
-
-.models-title{
-    text-align: center;
-}
-
-video{
-    width: 300px;
-    margin-left: 48px;
-    border: 2px solid black;
-    border-radius:10px;
 }
 
 .models-desc{
@@ -232,17 +94,158 @@ button{
     background-color: rgb(19, 105, 204);
 }
 
-@media all and(max-width:500px) {
+@media (max-width:650px) {
     #fechaMenu{
         margin-top: 350px;
     }
     
     video{
-        margin-left: 1px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .sidebar{
-        display: none;
+    .popups-wrapper{
+        left: 10%;
     }
+
+    h1{
+        margin-bottom: 60%;
+    }
+
+    /*Sidebar*/
+
+.sidebar{
+    border: 1px solid black;
+    position: absolute;
+    width: 240px;
+    top: 0px;
+    left: -240px;
+    height: 100%;
+    background: #ac19a4;
+    transition: all .5s ease;
+    z-index: 99;
+  }
+  .sidebar header{
+    font-size: 28px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #1b1b1b;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .sidebar a{
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-left: 5px solid transparent;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+  }
+  
+  /*Outros (Aside)*/
+  a.active,a:hover{
+    border-left: 5px solid #b93632;
+    color: #b93632;
+  }
+  .sidebar a i{
+    font-size: 23px;
+    margin-right: 16px;
+  }
+  .sidebar a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #check{
+    display: none;
+  }
+  label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(175, 110, 236);
+    border: 1px solid black;
+    padding: 5px;
+    top: 0px;
+    margin: 15px 30px;
+    font-size: 29px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+  }
+  label #cancel{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /*Songs*/
+  .listSongs{
+      display: none;
+      right: 17px;
+      width: 200px;
+      height: 20px;
+      position: absolute;
+  }
+  
+  .songs-btn{
+      width: 150px;
+      height: 45px;
+      margin-left: 48px;
+      margin-top: 10px;
+      background-color: blueviolet;
+      color: white;
+  }
+  
+  /*Exercises*/
+  .listExercises{
+      display: none;
+  }
+  
+  h3{
+      color: white;
+      text-align: center;
+      margin-right: 30px;
+  }
+  
+  hr{
+      margin-right: 35px;
+      height: 2px;
+      background-color: white;
+  }
+  
+  .exerciciosBtn{
+      margin-right: 48px;
+  }
+  
+  .exercises{
+      margin-top: 10px;
+      margin-left: 48px;
+      background-color: blueviolet;
+      width: 150px;
+      height: 45px;
+      color: white;
+  }
 
 }
