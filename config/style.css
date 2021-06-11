@@ -52,68 +52,7 @@ h1{
     font-size: 40px;
 }
 
-
-
-/*Modelos exercicios*/
-.models-exercicio{
-    padding: 15px;
-    box-shadow: 1px 1px 5px black;
-    border-radius: 10px;
-    border: 2px solid black;
-    width: 400px;
-    height: 800px;
-    background-color: rgb(34, 214, 184);
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 20px;
-}
-
-video{
-    border-radius: 10px;
-}
-
-.exercicios{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.models-desc{
-    font-size: 17px;
-}
-
-button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    width: 200px;
-    height: 50px;
-    padding: 5px;
-    font-size: 15px;
-    color: white;
-    background-color: rgb(19, 105, 204);
-}
-
-@media (max-width:650px) {
-    #fechaMenu{
-        margin-top: 350px;
-    }
-    
-    video{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .popups-wrapper{
-        left: 5.8%;
-        width: 400px;
-    }
-
-    h1{
-        margin-bottom: 60%;
-    }
-
-    /*Sidebar*/
+/*Sidebar*/
 
 .sidebar{
     border: 1px solid black;
@@ -202,7 +141,7 @@ button{
       height: 45px;
       margin-left: 48px;
       margin-top: 10px;
-      background-color: blueviolet;
+      background-color: rgb(86, 171, 228);
       color: white;
       cursor: pointer;
   }
@@ -238,7 +177,7 @@ button{
   .exercises{
       margin-top: 10px;
       margin-left: 48px;
-      background-color: blueviolet;
+      background-color: rgb(86, 171, 228);
       width: 150px;
       height: 45px;
       color: white;
@@ -248,5 +187,64 @@ button{
   .exercises:hover{
       background-color: rgb(127, 37, 211);
   }
+
+/*Modelos exercicios*/
+.models-exercicio{
+    padding: 15px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 400px;
+    height: 800px;
+    background-color: rgb(34, 214, 184);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+video{
+    border-radius: 10px;
+}
+
+.exercicios{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.models-desc{
+    font-size: 17px;
+}
+
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(19, 105, 204);
+}
+
+@media (max-width:650px) {
+    #fechaMenu{
+        margin-top: 350px;
+    }
+    
+    video{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .popups-wrapper{
+        left: 5.8%;
+        width: 400px;
+    }
+
+    h1{
+        margin-bottom: 60%;
+    }
 
 }
