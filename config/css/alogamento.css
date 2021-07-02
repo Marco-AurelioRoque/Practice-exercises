@@ -84,3 +84,31 @@ header nav ul li.menuDropDown ul{
     display: inline-block;
 }
 
+/*Cards exercises*/
+
+.model-card-wrapper{
+    margin: 2%;
+    width: 20%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.model-card{
+    background-color: rgb(84, 121, 189);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 8px black;
+    margin: 10px;
+}
+
+.model-card-h2{
+    text-align: center;
+}
+
+.model-card-desc{
+    max-width: 90%;
+    text-align: justify;
+}
